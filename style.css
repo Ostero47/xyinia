@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 body {
   background-color: rgb(36, 36, 87);
 }
@@ -7,14 +10,14 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
-header .center {
+.center {
   display: flex;
   justify-content: space-around;
   gap: 70px;
 }
 header.left {
 }
-header.center {
+.center {
   display: flex;
   list-style: none;
   gap: 30px;
@@ -23,7 +26,7 @@ header.center {
 }
 header.magaz {
 }
-.info {
+section .info {
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -31,11 +34,13 @@ header.magaz {
 }
 .left-info,
 .right-info {
+  flex-shrink: 0;
   margin-bottom: 20px;
   width: 25%;
 }
 
 .center-info {
+  flex-shrink: 0;
   position: relative;
   width: 50%;
   text-align: center;
@@ -43,12 +48,15 @@ header.magaz {
   align-self: flex-start;
 }
 .aquarim-info {
+  text-align: center;
   color: blue;
-  font-size: 140px;
+  font-size: 8.75rem;
+  width: auto;
   font-weight: bold;
   margin: 0;
   position: relative;
   z-index: 1;
+  word-wrap: break-word;
 }
 
 .shrimp-info {
@@ -103,6 +111,7 @@ header.magaz {
 footer {
   display: flex;
   flex-direction: column;
+  background-color: rgb(78, 122, 188);
 }
 .section-info {
   display: flex;
@@ -120,7 +129,7 @@ footer .left .center .right {
   justify-content: space-around;
   gap: 50px;
 }
-.info {
+footer .info {
   display: flex;
   text-align: left;
 }
@@ -131,13 +140,11 @@ footer .left .center .right {
 .right-foot {
   text-align: right;
 }
-.aquarim-foot {
-  font-size: 200px;
+.logo-foot {
+  font-size: 12.5rem;
   text-align: center;
   margin: 0;
   padding: 0;
   display: block;
-}
-footer {
-  background-color: rgb(78, 122, 188);
+  color: rgb(36, 36, 87);
 }

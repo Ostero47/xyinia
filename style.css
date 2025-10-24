@@ -10,6 +10,9 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
+section {
+  padding: 30px;
+}
 .center {
   display: flex;
   justify-content: space-around;
@@ -29,14 +32,14 @@ header.magaz {
 section .info {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   align-items: flex-end;
 }
 .left-info,
 .right-info {
   flex-shrink: 0;
   margin-bottom: 20px;
-  width: 25%;
+  width: 20%;
+  font-size: 1rem;
 }
 
 .center-info {
@@ -50,7 +53,7 @@ section .info {
 .aquarim-info {
   text-align: center;
   color: blue;
-  font-size: 8.75rem;
+  font-size: 8rem;
   width: auto;
   font-weight: bold;
   margin: 0;
@@ -61,15 +64,32 @@ section .info {
 
 .shrimp-info {
   position: absolute;
-  width: 120px;
+  width: 110px;
   height: auto;
   z-index: 1;
-  top: 120%;
+  top: 125%;
   left: 48%;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+.menu {
+  background-color: rgb(83, 83, 145);
+  padding: 50px 30px;
+  margin: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 
+}
+.crab{
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+}
+.stock {
+  background-color: rgb(83, 83, 145);
+}
 .button2 {
   margin: 15px;
   padding: 8px 25px 8px 25px;
@@ -112,6 +132,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: rgb(78, 122, 188);
+  margin-top: auto;
 }
 .section-info {
   display: flex;
@@ -119,7 +140,9 @@ footer {
   align-items: flex-end;
 }
 
-footer .left .center .right {
+footer .left, 
+footer .center, 
+footer .right {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
@@ -141,7 +164,7 @@ footer .info {
   text-align: right;
 }
 .logo-foot {
-  font-size: 12.5rem;
+  font-size: 9.5rem;
   text-align: center;
   margin: 0;
   padding: 0;

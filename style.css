@@ -80,8 +80,16 @@ section .info {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-.history{
-  display: block;
+.history_header h2 {
+  text-align: left;
+  font-size: 1rem;
+  margin: auto;
+  padding: auto;
+}
+.history_header p {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 40px 0;
 }
 .history__content{
   display: flex;
@@ -98,30 +106,44 @@ section .info {
   width: 640px;
   height: 370px;
   border-radius: 30px;
-  margin: 50px;
 }
 .menu {
   position: relative;
   background-color: rgb(83, 83, 145);
-  padding: 50px 30px;
-  margin: 40px 0;
 }
-
-.menu__header{
-
+.button1 {
+  margin: 15px;
+  padding: 8px 25px 8px 25px;
+  background-color: orange;
+  border-radius: 15px;
 }
-
-
-.dishes{  
-  font-size: 100rem;
+.menu__header h2 {
+  text-align: left;
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+}
+.menu__header p {
+  text-align: center;
+  font-size: 3rem;
+  padding: auto;
+  margin: 0 0 40px 0;
 }
 .crab{
-  margin: 0px 0px 0px 150px;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
+  margin: 0 0 0 150px;
   border-radius: 20px;
 }
-
+.delivery_header h2 {
+  font-size: 1rem;
+  text-align: left;
+}
+.delivery_header p {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0px;
+}
 .delivery-wrapper{
   display: flex;
   justify-content: center;
@@ -146,14 +168,41 @@ section .info {
 }
 
 
-
-.stock {
+.reviews-png {
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+}
+.reviews_header h2 {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0px;
+}
+.reviews_header p {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 40px 0;
+}
+.stocks {
   background-color: rgb(83, 83, 145);
   padding: 50px 30px;
   margin: 40px 0;
-  display: flex;
+  display: flex; 
   align-items: flex-start;
   justify-content: space-between;
+}
+.stocks_header h2 {
+  font-size: 1rem;
+}
+.stocks_header p {
+  font-size: 3rem;
+margin: 0px;
+}
+.button2 {
+  margin: 15px;
+  padding: 10px 35px 10px 35px;
+  background-color: orange;
+  border-radius: 15px;
 }
 .fish1 {
   width: 350px;
@@ -161,24 +210,7 @@ section .info {
   border-radius: 20px;
 
 }
-.button2 {
-  margin: 15px;
-  padding: 8px 25px 8px 25px;
-  background-color: orange;
-  border-radius: 15px;
-}
-.button3 {
-  margin: 15px;
-  padding: 10px 35px 10px 35px;
-  background-color: orange;
-  border-radius: 15px;
-}
-.button4 {
-  margin: 15px;
-  padding: 40px 300px 40px 300px;
-  background-color: orange;
-  border-radius: 15px;
-}
+
 .logo {
   width: 150px;
   height: 70px;
@@ -191,18 +223,21 @@ section .info {
 .fish2{
   width: auto;
   height: auto;
+  margin: 0 20px 0 0px;
 }
-.reviews-png {
-  margin: 50px;
-  display: flex;
-  gap: 30px;
+.regist_header h2 {
+  font-size: 1rem;
+  text-align: left;
 }
-
+.regist_header p {
+  font-size: 3rem;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
 .regist__form{
   justify-content: space-between;
   
 }
-
 .regist-row {
   display: flex;
   gap: 10px;
@@ -220,9 +255,25 @@ section .info {
   height: 80px;
   border-radius: 6px;
 }
-
+.button3 {
+  margin: 15px;
+  padding: 40px 300px 40px 300px;
+  background-color: orange;
+  border-radius: 15px;
+}
+.contacts_header h2 {
+  font-size: 1rem;
+  text-align: left;
+  margin: auto;
+}
+.contacts_header p {
+  font-size: 3rem;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
 .cups {
-  margin: 50px;
+  width: auto;
+  margin: 0 30px 0 150px;
 }
 footer {
   display: flex;
@@ -267,3 +318,5 @@ footer .info {
   display: block;
   color: rgb(36, 36, 87);
 }
+
+

@@ -1,14 +1,21 @@
 html {
   font-size: 16px;
+  color: aliceblue;
 }
 body {
-  background-color: rgb(36, 36, 87);
+  background-color: rgb(28, 28, 94);
+  padding: 0 40px;
 }
 header {
   font-size: small;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.magaz{
+  background-color: rgb(28, 28, 94);
+  border: none;
+  
 }
 section {
   padding: 30px;
@@ -22,6 +29,11 @@ section {
   padding: 0px;
 }
 .container{
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container_flex{
   display: flex;
   flex-wrap: wrap;
 }
@@ -29,6 +41,9 @@ section {
 
 }
 header.magaz {
+}
+.aquarim{
+  margin: 100px 10px 50px 10px;
 }
 .info h3{
   position: absolute;
@@ -80,6 +95,9 @@ section .info {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+.history{
+  margin: 100px 10px 50px 10px;
+}
 .history_header h2 {
   text-align: left;
   font-size: 1rem;
@@ -110,6 +128,7 @@ section .info {
 .menu {
   position: relative;
   background-color: rgb(83, 83, 145);
+  padding: 50px 10px 50px 10px;
 }
 .button1 {
   margin: 15px;
@@ -134,6 +153,9 @@ section .info {
   height: 450px;
   margin: 0 0 0 150px;
   border-radius: 20px;
+}
+.delivery{
+  padding: 50px 10px 50px 10px;
 }
 .delivery_header h2 {
   font-size: 1rem;
@@ -166,8 +188,9 @@ section .info {
   height: auto;
   object-fit: cover;
 }
-
-
+.reviews{
+  padding: 50px 10px 0px 10px;
+}
 .reviews-png {
   margin: 50px;
   display: flex;
@@ -183,8 +206,14 @@ section .info {
   font-size: 3rem;
   margin: 0 0 40px 0;
 }
+.reviews_slider{
+  border: none;
+  outline: none;
+  margin: 0 0 0 20px;
+  background-color: rgb(28, 28, 94);
+}
 .stocks {
-  background-color: rgb(83, 83, 145);
+  background-color: rgb(68, 68, 134);
   padding: 50px 30px;
   margin: 40px 0;
   display: flex; 
@@ -197,6 +226,9 @@ section .info {
 .stocks_header p {
   font-size: 3rem;
 margin: 0px;
+}
+.stocks_main{
+  
 }
 .button2 {
   margin: 15px;
@@ -218,6 +250,7 @@ margin: 0px;
 .regist{
   text-align: center;
   z-index: 1;
+  margin: 0 10px 50px 10px;
 }
 
 .fish2{
@@ -243,23 +276,30 @@ margin: 0px;
   gap: 10px;
   margin-bottom: 20px;
   border-radius: 6px;
+  color: aliceblue;
 }
 
 .regist-row input {
   flex: 1;
   padding: 24px;
   border-radius: 6px;
+  background-color: rgb(23, 23, 74);
+
 }
 .regist-row .full {
-  
+  background-color: rgb(23, 23, 74);
   height: 80px;
   border-radius: 6px;
+  color: aliceblue;
 }
 .button3 {
   margin: 15px;
-  padding: 40px 300px 40px 300px;
+  padding: 40px 100px 40px 100px;
   background-color: orange;
   border-radius: 15px;
+}
+.contacts{
+  padding: 50px 10px 50px 10px;
 }
 .contacts_header h2 {
   font-size: 1rem;
@@ -271,20 +311,30 @@ margin: 0px;
   margin: 0 0 40px 0;
   text-align: center;
 }
+
+.contacts_text{
+  display: grid;
+  grid-template-rows: repeat(6,90px);
+  grid-template-columns: 700px auto;
+
+}
 .cups {
-  width: auto;
-  margin: 0 30px 0 150px;
+  grid-row: span 6;
+  height: 100%;
 }
 footer {
+  
   display: flex;
   flex-direction: column;
   background-color: rgb(78, 122, 188);
+  width: 100%;
   margin-top: auto;
 }
 .section-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 50px 0px 0px 100px;
 }
 
 footer .left, 
@@ -316,7 +366,7 @@ footer .info {
   margin: 0;
   padding: 0;
   display: block;
-  color: rgb(36, 36, 87);
+  color: rgb(47, 47, 140);
 }
 
 

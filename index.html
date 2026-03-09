@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./reset css" />
+    <link rel="stylesheet" href="./reset.css" />
     <script src="./main.js" defer></script>
   </head>
 
   <body>
     <header>
-      <div class="left">
-        <img src="./img/Logo.png" alt="logo" />
-      </div>
+      <div class="container_flex">
+      <img src="./img/Logo.png" alt="logo" />
 
-      <ul class="center">
+        <a href="#"  class="magaz">
+        <img src="./img/basket.png" alt="magaz" />
+        </a>
+                
+      </div>
+      
+    
+      
+
+      <ul class="center container_flex">
         <li><a href="#">о ресторане</a></li>
         <li><a href="#">меню</a></li>
         <li><a href="#">доставка и оплата</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
-      <button class="magaz">
-        <img src="./img/basket.png" alt="magaz" />
-      </button>
+      
     </header>
 
-    <section>
+    <section class="aquarim container">
       <div class="info">
         <div class="left-info">
           <h3 class="">рыбный</h3>
@@ -42,7 +48,7 @@
         </div>
 
         <div class="right-info">
-          <h3 class="restarant">ресторан</h3>
+          <h3 class="restarant  container">ресторан</h3>
           <p>
             свежая рыба из наших аквариумов-гарантированная свежесть
             качественная доставка, где горячие блюда сохраняют свой вкус
@@ -84,7 +90,7 @@
         <p>блюда которые на всегда запомнятся вам</p>
       </div>
 
-      <div class="menu1 container">
+      <div class="menu1 container_flex">
         
         <div>
           <h3>МОРСКОЙ БРИЗ</h3>
@@ -158,11 +164,29 @@
         <h2>отзывы</h2>
         <p>бесценные отзывы доказываюшие наше мастерство</p>
       </div>
-      
-        <p>
+      <div class="container_flex">
+        <div>
+          <p>
           мы гордимся доверием наших клиентов и ценим каждый отзыв, который
           вдохновляет нас становится еще лучше
         </p>
+        </div>
+        <div>
+          <a href="" class="reviews_slider">
+            <img src="./img/chevron-left.png" alt="left">
+          </a> 
+          
+        
+        <a href="" class="reviews_slider">
+          <img src="./img/chevron-right.png" alt="right">
+        </a> 
+          
+        </div>
+          
+        
+        
+      </div>
+        
       <div class="reviews-png">
         <a href="#">
           <img src="./img/отзывы/Frame 1984077228.png" alt="">
@@ -192,27 +216,32 @@
       
     </section>
 
+
+
     <section class="stocks">
       
-      <div class="stocks_header">
+      <div class="stocks_header container_flex">
         <h2>акции</h2>
         <p>оазис выгодных предложений</p>
       </div>
-         
-      
-      <div>
+
+      <div class="stocks_main container_flex">
+        <div>
           <h3>скидка 15% на первый заказ</h3>
           <p>
             воспользуйтесь этой прекрасной возможностью и откройте для себя мир <br>
             изысканных морских деликатесов, которыми славится наш ресторан <br>
           </p>
           <button class="button2">
-          <p>забрать скидку</p>
+            <p>забрать скидку</p>
           </button>
+        </div>
+          
+          <img class="fish1" src="./img/image-24.png" alt="fish">
           
       </div>
+        
       
-      <img class="fish1" src="./img/image-24.png" alt="fish">
     </section>
 
     <section class="regist">
@@ -221,7 +250,7 @@
         <p>забранируйте свое место за лучшим столом</p>
       </div>
       
-      <div class="container regist__form">
+      <div class="container_flex regist__form">
         <form action="#">
         <div class="regist">
           <div class="regist-row">
@@ -242,8 +271,9 @@
           <button class="button3">
             <p>забронировать</p>
           </button>
+          
       </form>
-      <img class="fish2" src="./img/image-25.png" alt="fish">
+        <img class="fish2" src="./img/image-25.png" alt="fish">
       </div>
     </section>
 
@@ -253,28 +283,30 @@
         <p>морская атмосфера, обьеденяюшая людей</p>
       </div>
       
-      <div class="container">
-        
-        <div>
+      <div class="contacts_text">
           <img class="cups" src="./img/Mask group.png" alt="">
-        </div>
-
-        <div>
-          <ul>
-          <li>
-            <h3>если у вас остались вопросы:</h3>
-            <div class="contacts">
+          <div>
+            <h3>Если у вас остались вопросы:</h3>
+          </div>
+          <div class="contacts">
               <p>+7 (965) 478-89-76</p>
               <p>aquarim@gmail.com</p>
             </div>
-            <h3>адрес:</h3>
-            <div>
+          <div>
+            <h3>
+              АДРЕС:
+            </h3>
+          </div>
+          <div>
+            <p>
               <p>г.москва,ул. тверская, д.8</p>
-            </div>
-              
-            
-          </li>
-          <h3>мы в социальных сетях:</h3>
+            </p>
+          </div>
+          <div>
+            <h3>
+              МЫ В СОЦИАЛЬНЫХ СЕТЯХ:
+            </h3>
+          </div>
           <div>
             <li class="social">
               <a href="https://instagram.com/" target="_blank">
@@ -290,13 +322,7 @@
                 <img src="./img/youtube.png" alt="Youtube"/>
               </a>
             </li>
-          </div>
-          
-        </ul>
         </div>
-      </div>
-        
-      
     </section>
 
     <footer>

@@ -19,8 +19,9 @@ header {
 }
 section {
   padding: 30px;
-}
-.center {
+} 
+.header_menu {
+  color: rgb(191, 69, 69);
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -105,7 +106,7 @@ section .info {
   padding: auto;
 }
 .history_header p {
-  text-align: center;
+  text-align: center; 
   font-size: 3rem;
   margin: 0 0 40px 0;
 }
@@ -113,7 +114,6 @@ section .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
   margin-top: 30px;
 }
 .text__content{
@@ -132,9 +132,15 @@ section .info {
 }
 .button1 {
   margin: 15px;
-  padding: 8px 25px 8px 25px;
+  padding: 20px 50px 20px 50px;
   background-color: orange;
   border-radius: 15px;
+  cursor: pointer;
+  transition: transform 1s, bacground-color 1s;
+}
+.button1:hover {
+  background-color: #ff8c00;
+  transform: scale(1.02);
 }
 .menu__header h2 {
   text-align: left;
@@ -164,7 +170,7 @@ section .info {
 .delivery_header p {
   text-align: center;
   font-size: 3rem;
-  margin: 0px;
+  margin: 0;
 }
 .delivery-wrapper{
   display: flex;
@@ -206,30 +212,64 @@ section .info {
   font-size: 3rem;
   margin: 0 0 40px 0;
 }
-.reviews_slider{
-  border: none;
-  outline: none;
-  margin: 0 0 0 20px;
+.reviews_p{
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 50px 200px 0px 50px;
+}
+.rating  {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(68, 68, 134);
+  border-radius: 20px;
+  margin: 0;
+}
+
+.rating h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.like, .dislike {
+  padding: 10px 25px;
+  margin: 0 10px;
+  font-size: 1.2rem;
   background-color: rgb(28, 28, 94);
+  color: white;
+  cursor: pointer;
+}
+
+.like.active {
+  background-color: green;
+}
+
+.dislike.active {
+  background-color: red;
 }
 .stocks {
   background-color: rgb(68, 68, 134);
   padding: 50px 30px;
   margin: 40px 0;
-  display: flex; 
-  align-items: flex-start;
   justify-content: space-between;
 }
+.stocks_header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .stocks_header h2 {
   font-size: 1rem;
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
+
 .stocks_header p {
   font-size: 3rem;
-margin: 0px;
+  text-align: center;
+  margin: 0;
 }
-.stocks_main{
-  
-}
+
 .button2 {
   margin: 15px;
   padding: 10px 35px 10px 35px;
@@ -240,6 +280,7 @@ margin: 0px;
   width: 350px;
   height: 350px;
   border-radius: 20px;
+  margin-left: 100px;
 
 }
 
@@ -369,4 +410,24 @@ footer .info {
   color: rgb(47, 47, 140);
 }
 
-
+.cart-icon-wrapper{
+  position: relative;
+  display: inline-block;
+}
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  font-family: Arial, sans-serif;
+}

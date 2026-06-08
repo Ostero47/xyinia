@@ -38,11 +38,6 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-.center {
-
-}
-header.magaz {
-}
 .aquarim{
   margin: 100px 10px 50px 10px;
 }
@@ -50,7 +45,7 @@ header.magaz {
   position: absolute;
   top: 40%;
   
-  font-size: 4rem;
+  font-size: 3.5vw;
   margin: 0px;
 }
 section .info {
@@ -63,7 +58,7 @@ section .info {
   flex-shrink: 0;
   margin-bottom: 20px;
   width: 20%;
-  font-size: 1rem;
+  font-size: 1.5vw;
 }
 
 .center-info {
@@ -77,7 +72,8 @@ section .info {
 .aquarim-info {
   text-align: center;
   color: blue;
-  font-size: 8rem;
+  font-size: 7vw;
+  white-space: nowrap;
   width: auto;
   font-weight: bold;
   margin: 0;
@@ -88,10 +84,9 @@ section .info {
 
 .shrimp-info {
   position: absolute;
-  width: 110px;
+  width: 6vw;
   height: auto;
   z-index: 1;
-  top: 125%;
   left: 48%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -114,15 +109,17 @@ section .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 10px;
+  
 }
-.text__content{
-  flex: 1;
+.text__content p{
+  font-size: 1.5vw;
+  max-width: 100%;
 }
 
 .cook{
-  width: 640px;
-  height: 370px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 30px;
 }
 .menu {
@@ -130,13 +127,16 @@ section .info {
   background-color: rgb(83, 83, 145);
   padding: 50px 10px 50px 10px;
 }
+.menu_text {
+  font-size: 1.5vw;
+  margin: 50px;
+}
 .button1 {
   margin: 15px;
   padding: 20px 50px 20px 50px;
   background-color: orange;
   border-radius: 15px;
   cursor: pointer;
-  transition: transform 1s, bacground-color 1s;
 }
 .button1:hover {
   background-color: #ff8c00;
@@ -155,9 +155,8 @@ section .info {
   margin: 0 0 40px 0;
 }
 .crab{
-  width: 450px;
-  height: 450px;
-  margin: 0 0 0 150px;
+  width: 25vw;
+  height: 25vw;
   border-radius: 20px;
 }
 .delivery{
@@ -181,7 +180,7 @@ section .info {
 }
 .delivery .right{
   width: 200px;
-  text-align: right;
+  text-align: left;
 }
 .delivery .left1{
   width: 200px;
@@ -190,7 +189,7 @@ section .info {
 
 .moto{
   position: relative;
-  width: 50%;
+  width: 30vw;
   height: auto;
   object-fit: cover;
 }
@@ -199,8 +198,7 @@ section .info {
 }
 .reviews-png {
   margin: 50px;
-  display: flex;
-  gap: 30px;
+  display: block;
 }
 .reviews_header h2 {
   text-align: left;
@@ -247,18 +245,19 @@ input[type="radio"] {
 
 
 .controls {
-  text-align: center; 
+  
   margin-top: 10px; 
 }
 
 
 .controls label {
-  display: inline-block; 
+  display: inline-block;
+   
   width: 15px; 
   height: 15px;
   background: gray; 
   border-radius: 50%; 
-  margin: 5px; 
+  margin: 15px; 
   cursor: pointer; 
 }
 
@@ -269,7 +268,7 @@ input:checked + label {
 
 .rating  {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   background-color: rgb(68, 68, 134);
   border-radius: 20px;
   margin: 0;
@@ -345,8 +344,10 @@ input:checked + label {
 }
 
 .fish2{
-  width: auto;
-  height: auto;
+  width: 35vw;
+  max-width: 400px;
+  height: 35vw;
+  max-height: 400px;  
   margin: 0 20px 0 0px;
 }
 .regist_header h2 {
@@ -359,23 +360,26 @@ input:checked + label {
   text-align: center;
 }
 .regist__form{
+  display: flex;
   justify-content: space-between;
+  color: aliceblue;
   
 }
 .regist-row {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 1px;
+  margin-bottom: 10px;
   border-radius: 6px;
   color: aliceblue;
 }
 
 .regist-row input {
   flex: 1;
-  padding: 24px;
+  width: 12vw;
+  padding: 25px;
   border-radius: 6px;
   background-color: rgb(23, 23, 74);
-
+  color: aliceblue;
 }
 .regist-row .full {
   background-color: rgb(23, 23, 74);
@@ -404,14 +408,17 @@ input:checked + label {
 }
 
 .contacts_text{
+  
   display: grid;
-  grid-template-rows: repeat(6,90px);
-  grid-template-columns: 700px auto;
+  grid-template-rows: repeat(6,auto);
+  grid-template-columns: 55vw auto;
 
 }
 .cups {
+  max-width: 550px;
+  width: 50vw ;
   grid-row: span 6;
-  height: 100%;
+  
 }
 footer {
   
@@ -452,7 +459,7 @@ footer .info {
   text-align: right;
 }
 .logo-foot {
-  font-size: 9.5rem;
+  font-size: 10vw;
   text-align: center;
   margin: 0;
   padding: 0;

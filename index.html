@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AQUARIM Restaurant</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./reset.css" />
     <script src="./main.js" defer></script>   
@@ -11,328 +11,254 @@
 
   <body>
     <header>
-      <div class="">
-      <img src="./img/Logo.png" alt="logo" />
+      <button id="themeToggle" class="theme-btn" title="Сменить тему">
+        <span class="theme-btn__icon">🌙</span>
+      </button>
+      <div>
+        <a href="#home-page"><img src="./img/Logo.png" alt="logo" /></a>
 
-        <a href="#"  class="magaz" id="cartIcon">
+        <a href="#" class="magaz" id="cartIcon">
           <div class="cart-icon-wrapper">
             <img src="./img/basket.png" alt="magaz" />
             <span class="cart-count" id="cartCount">0</span>
           </div>
-        
         </a>
-                
       </div>
-      
-    
-      
 
       <ul class="header_menu container_flex">
-        <li><a href="#">о ресторане</a></li>
-        <li><a href="#">меню</a></li>
-        <li><a href="#">доставка и оплата</a></li>
-        <li><a href="#">контакты</a></li>
+        <li><a href="#about-section">о ресторане</a></li> 
+        <li><a href="#menu-section">меню</a></li>
+        <li><a href="#delivery-section">доставка и оплата</a></li>
+        <li><a href="#contacts-section">контакты</a></li>
       </ul>
-      
     </header>
 
-    <section class="aquarim container">
-      <div class="info">
-        <div class="left-info">
-          <h3 class="">рыбный</h3>
-          <p>
-            открывайте для себя мир изысканных вкусов с нашими рыбными
-            делекатесами, приготовленными специально для вас
-          </p>
-        </div>
+    
+      <section class="aquarim container">
+        <div class="info">
+          <div class="left-info">
+            <h3>рыбный</h3>
+            <p>открывайте для себя мир изысканных вкусов с нашими рыбными деликатесами, приготовленными специально для вас</p>
+          </div>
 
-        <div class="center-info">
-          <h2 class="aquarim-info">AQUARIM</h2>
-          <img src="./img/shrimp2 2.png" alt="#" class="shrimp-info" />
-        </div>
+          <div class="center-info">
+            <h2 class="aquarim-info">AQUARIM</h2>
+            <img src="./img/shrimp2 2.png" alt="#" class="shrimp-info" />
+          </div>
 
-        <div class="right-info">
-          <h3 class="restarant  container">ресторан</h3>
-          <p>
-            свежая рыба из наших аквариумов-гарантированная свежесть
-            качественная доставка, где горячие блюда сохраняют свой вкус
-          </p>
+          <div class="right-info">
+            <h3 class="restarant container">ресторан</h3>
+            <p>свежая рыба из наших аквариумов-гарантированная свежесть качественная доставка, где горячие блюда сохраняют свой вкус</p>
+          </div>
         </div>
-      </div>
-      <a href="#">меню</a>
-    </section>
+        <a href="#menu-page">меню</a>
+      </section>
 
-    <section class="history">
-      <div class="history_header">
-        <h2>о ресторане</h2>
-        <p>история рыбного искушения</p>
-      </div>
-        
-      <div class="history__content">
+      <section class="history" id="about-section"> 
+        <div class="history_header">
+          <h2>о ресторане</h2>
+          <p>история рыбного искушения</p>
+        </div>
+          
+        <div class="history__content">
           <div class="text__content">
-           <p>
-             Наша история началась с мечты о создании места, 
-            где каждый может насладиться непревзойденным вкусом 
-            свежей рыбы прямо у себя дома. Мы поставили перед 
-            собой задачу предложить нечто большее, чем просто 
-            блюда из рыбы - мы хотели подарить вам настоящее 
-            морское путешествие. Мы - это место, где каждая деталь имеет значение. 
-          </p>
+            <p>Наша история началась с мечты о создании места, где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. Мы поставили перед собой задачу предложить нечто большее, чем просто блюда из рыбы - мы хотели подарить вам настоящее морское путешествие. Мы - это место, где каждая деталь имеет значение.</p>
+          </div>
+          <img class="cook" src="./img/image 10.png" alt="cook">
+        </div>
+        <a href="#">узнать больше</a>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews_header">
+          <h2>отзывы</h2>
+          <p>бесценные отзывы доказывающие наше мастерство</p>
+        </div>
+        <div class="container_flex">
+          <div class="reviews_p">
+            <p>мы гордимся доверием наших клиентов и ценим каждый отзыв, который <br> вдохновляет нас становиться еще лучше</p>
+          </div>
+            
+          <div class="rating">
+              <h2>оцените ресторан</h2>
+              <button class="like" id="likeBtn">👍 Нравится</button>
+              <button class="dislike" id="dislikeBtn">👎 Не нравится</button>
+          </div>
+        </div>
           
+        <div class="reviews-png">
+          <a href="#"><img src="./img/отзывы/Frame 1984077228.png" alt=""></a>
+          <a href="#"><img src="./img/отзывы/Mask group.png" alt=""></a>
+          <a href="#"><img src="./img/отзывы/Mask group (1).png" alt=""></a>
+          <a href="#"><img src="./img/отзывы/Mask group (2).png" alt=""></a>
+          <a href="#"><img src="./img/отзывы/Mask group (3).png" alt=""></a> 
+          <a href="#"><img src="./img/отзывы/review item.png" alt=""></a>
         </div>
         
-        <img class="cook" src="./img/image 10.png" alt="cook">
-      </div>
-       <a href="#">узнать больше</a>
-    </section>
+        <div class="slider">
+          <input type="radio" name="slider" id="slide1" checked> 
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
 
-    <section class="menu">
-      <div class="menu__header">
-        <h2>menu</h2>
-        <p>блюда которые на всегда запомнятся вам</p>
-      </div>
+          <div class="slides">
+              <div class="slide"><img src="./img/отзывы/Mask group (1).png" ></div>
+              <div class="slide"><img src="./img/отзывы/Mask group (2).png" ></div>
+              <div class="slide"><img src="./img/отзывы/Mask group (3).png" ></div>
+          </div>
 
-      <div class="menu1 container_flex">
-        
-        <div class="menu_text">
-          <h3>МОРСКОЙ БРИЗ</h3>
-          <p>
-            тарелка морепродуктов, включающая сочные куски краба, ароматные креветки <br>
-            и нежные мидии,тподается с фирменным соусом и свежими зелеными травами 
-          </p>
-          <p>1300 рублей 150г</p>
-          <button class="button1">
-            <p>в корзину</p>
-          </button>
+          <div class="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+          </div>
         </div>
-        <img class="crab" src="./img/Ellipse 2.png" alt="crab">
-        
-      </div>
+      </section>
 
-      <a href="">Перейти в меню</a>
-      
-      
+      <section class="stocks">
+        <div class="stocks_header">
+          <h2>акции</h2>
+          <p>оазис выгодных предложений</p>
+        </div>
 
-    </section>
-
-    <section class="delivery">
-      <div class="delivery_header">
-        <h2>доставка</h2> 
-        <p>быстро удобно, надежно доставка по москве и мо</p>
-      </div>
-      
-      <div class="delivery-wrapper">
-        
-        <div class="left1">
-
+        <div class="stocks_main container_flex">
           <div>
-            <h3>01</h3>
-            <h4>термосумка для сохранения тепла</h4>
-            <p>
-              мы доставляем в специальных
-               термосумках, чтобы созранить
-               температуру и свежесть блюд
-            </p>
+            <h3>скидка 15% на первый заказ</h3>
+            <p>воспользуйтесь этой прекрасной возможностью и откройте для себя мир <br> изысканных морских деликатесов, которыми славится наш ресторан <br></p>
+            <button class="button2">
+              <p>забрать скидку</p>
+            </button>
           </div>
-
-          <div class="left2">
-            <h3>02</h3>
-            <h4>качество как в ресторане</h4>
-            <p>ваш заказ не успеет остыть и не
-               потерять своего вкуса в пути</p> 
-          </div>
-
-        </div>
-
-        <img src="./img/img.png" alt="moto" class="moto">
-
-        
-
-        <div class="right">
-          <h3>03</h3>
-          <h4>качество как в ресторане</h4>
-            <p>вы получаете блюдо в том виде, в котором их приготовил повар <br>
-              -свежими, вкусными и красивыми <br>
-              чтобы насладиться <br>
-              непревзойденным вкусом дома</p>
-        </div>
-
-        </div>
-      
-    </section>
-
-    <section class="reviews">
-      <div class="reviews_header">
-        <h2>отзывы</h2>
-        <p>бесценные отзывы доказываюшие наше мастерство</p>
-      </div>
-      <div class="container_flex">
-        <div class="reviews_p">
-          <p>мы гордимся доверием наших клиентов и ценим каждый отзыв, который <br>
-          вдохновляет нас становится еще лучше</p>
-        </div>
-          
-        <div class="rating">
-            <h2>оцените ресторан</h2>
-            <button class="like" id="likeBtn">👍 Нравится</button>
-            <button class="dislike" id="dislikeBtn">👎 Не нравится</button>
-        </div>
-        
-      </div>
-        
-      <div class="reviews-png">
-        <a href="#">
-          <img src="./img/отзывы/Frame 1984077228.png" alt="">
-        </a>
-        <a href="#">
-          <img src="./img/отзывы/Mask group.png" alt="">
-        </a>
-
-        <a href="#">
-          <img src="./img/отзывы/Mask group (1).png" alt="">
-        </a>
-
-        <a href="#">
-          <img src="././img/отзывы/Mask group (2).png" alt="">
-        </a>
-
-        <a href="#">
-          <img src="./img/отзывы/Mask group (3).png" alt="">
-        </a> 
-
-        <a href="#">
-          <img src="./img/отзывы/review item.png" alt="">
-        </a>
-
-      </div>
-      
-    <div class="slider">
-      <input type="radio" name="slider" id="slide1" checked> 
-      <input type="radio" name="slider" id="slide2">
-      <input type="radio" name="slider" id="slide3">
-
-      <div class="slides">
-          <div class="slide"><img src="./img/отзывы/Mask group (1).png" ></div>
-          <div class="slide"><img src="./img/отзывы/Mask group (2).png" ></div>
-          <div class="slide"><img src="./img/отзывы/Mask group (3).png" ></div>
-      </div>
-
-      <div class="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-      </div>
-    </div>
-    </section>
-
-
-
-    <section class="stocks">
-      
-      <div class="stocks_header ">
-        <h2>акции</h2>
-        <p>оазис выгодных предложений</p>
-      </div>
-
-      <div class="stocks_main  container_flex">
-        <div>
-          <h3>скидка 15% на первый заказ</h3>
-          <p>
-            воспользуйтесь этой прекрасной возможностью и откройте для себя мир <br>
-            изысканных морских деликатесов, которыми славится наш ресторан <br>
-          </p>
-          <button class="button2">
-            <p>забрать скидку</p>
-          </button>
-        </div>
-          
           <img class="fish1" src="./img/image-24.png" alt="fish">
-          
-      </div>
+        </div>
+      </section>
+
+      <section class="regist">
+        <div class="regist_header">
+          <h2>бронь</h2>
+          <p>забронируйте свое место за лучшим столом</p>
+        </div>
         
-      
-    </section>
+        <div class="regist__form">
+          <form action="#" id="bookingForm">
+            <div class="regist">
+              <div class="regist-row">
+                <input type="text" id="regName" placeholder="имя" />
+                <input type="text" id="regPhone" placeholder="телефон" />
+              </div>
+              <div class="regist-row">
+                <input type="text" id="regDate" placeholder="дата" />
+                <input type="text" placeholder="время" />
+                <input type="text" placeholder="кол-во гостей" />
+              </div>
+              <div class="regist-row">
+                <input type="text" class="full" placeholder="ваши пожелания" />
+              </div>
+            </div>
+              
+            <button class="button3">
+              <p>забронировать</p>
+            </button>
+          </form>
+          <img class="fish2" src="./img/image-25.png" alt="fish">
+        </div>
+      </section>
+    
 
-    <section class="regist">
-      <div class="regist_header">
-        <h2>бронь</h2>
-        <p>забранируйте свое место за лучшим столом</p>
-      </div>
-      
-      <div class=" regist__form">
-        <form action="#">
-        <div class="regist">
-          <div class="regist-row">
-            <input type="text" placeholder="имя" />
-            <input type="text" placeholder="телефон" />
+    
+      <section class="menu" id="menu-section">
+        <div class="menu__header">
+          <h2>menu</h2>
+          <p>блюда которые навсегда запомнятся вам</p>
+        </div>
+
+        <div class="menu1 container_flex">
+          <div class="menu_text">
+            <h3>МОРСКОЙ БРИЗ</h3>
+            <p>тарелка морепродуктов, включающая сочные куски краба, ароматные креветки <br> и нежные мидии, подается с фирменным соусом и свежими зелеными травами</p>
+            <p>1300 рублей 150г</p>
+            <button class="button1">
+              <p>в корзину</p>
+            </button>
           </div>
-          <div class="regist-row">
-            <input type="text" placeholder="дата" />
-            <input type="text" placeholder="время" />
-            <input type="text" placeholder="кол-во гостей" />
+          <img class="crab" src="./img/Ellipse 2.png" alt="crab">
+        </div>
+      </section>
+    
+
+    
+      <section class="delivery" id="delivery-section">
+        <div class="delivery_header">
+          <h2>доставка</h2> 
+          <p>быстро удобно, надежно доставка по москве и мо</p>
+        </div>
+        
+        <div class="delivery-wrapper">
+          <div class="left1">
+            <div>
+              <h3>01</h3>
+              <h4>термосумка для сохранения тепла</h4>
+              <p>мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
+            </div>
+            <div class="left2">
+              <h3>02</h3>
+              <h4>качество как в ресторане</h4>
+              <p>ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p> 
+            </div>
           </div>
 
-          <div class="regist-row">
-            <input type="text" class="full" placeholder="ваши пожелания" />
+          <img src="./img/img.png" alt="moto" class="moto">
+
+          <div class="right">
+            <h3>03</h3>
+            <h4>качество как в ресторане</h4>
+            <p>вы получаете блюдо в том виде, в котором их приготовил повар <br> -свежими, вкусными и красивыми <br> чтобы насладиться <br> непревзойденным вкусом дома</p>
           </div>
         </div>
-          
-          <button class="button3">
-            <p>забронировать</p>
-          </button>
-          
-      </form>
-        <img class="fish2  " src="./img/image-25.png" alt="fish">
-      </div>
-    </section>
+      </section>
+    
 
-    <section class="contacts">
-      <div class="contacts_header">
-        <h2>контакты</h2>
-        <p>морская атмосфера, обьеденяюшая людей</p>
-      </div>
-      
-      <div class="contacts_text">
+    
+      <section class="contacts" id="contacts-section">
+        <div class="contacts_header">
+          <h2>контакты</h2>
+          <p>морская атмосфера, объединяющая людей</p>
+        </div>
+        
+        <div class="contacts_text">
           <img class="cups" src="./img/Mask group.png" alt="#">
           <div>
             <p>Если у вас остались вопросы:</p>
           </div>
-          <div class="contacts">
-              <p>+7 (965) 478-89-76</p>
-              <p>aquarim@gmail.com</p>
-            </div>
+          <div class="contacts-info">
+            <p>+7 (965) 478-89-76</p>
+            <p>aquarim@gmail.com</p>
+          </div>
           <div>
             <p>АДРЕС:</p>
           </div>
           <div>
-            <p>г.москва,ул. тверская, д.8</p>
+            <p>г.москва, ул. тверская, д.8</p>
           </div>
           <div>
             <p>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</p>
           </div>
-          <ul>
+          <ul class="container_flex" style="list-style: none; padding: 0; gap: 15px;">
             <li class="social">
-              <a href="https://instagram.com/" target="_blank">
-                <img src="./img/instagram.png" alt="Instagram"/>
-              </a>
+              <a href="https://instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Instagram"/></a>
             </li>
             <li>
-              <a href="https://t.me/" target="_blank">
-                <img src="./img/telegram.png" alt="Telegram"/>
-              </a>
+              <a href="https://t.me/" target="_blank"><img src="./img/telegram.png" alt="Telegram"/></a>
             </li>
             <li>
-              <a href="https://vk.com/" target="_blank">
-                <img src="./img/vk.png" alt="VKontakte"/>
-              </a>
+              <a href="https://vk.com/" target="_blank"><img src="./img/vk.png" alt="VKontakte"/></a>
             </li>  
             <li>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="./img/youtube.png" alt="Youtube"/>
-              </a>
+              <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.png" alt="Youtube"/></a>
             </li>  
           </ul>
-    </section>
+        </div>
+      </section>
+    
 
     <footer>
       <div class="section-info">
@@ -343,36 +269,20 @@
         <div>
           <h3>о ресторане</h3>
           <ul>
-            <li>
-              <a href="#">о шефе</a>
-            </li>
-            <li>
-              <a href="#">галерея</a>
-            </li>
-            <li>
-              <a href="#">новости</a>
-            </li>
-            <li>
-              <a href="#">команда</a>
-            </li>
+            <li><a href="#">о шефе</a></li>
+            <li><a href="#">галерея</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">команда</a></li>
           </ul>
         </div>
 
         <div>
           <h3>для посетителей</h3>
           <ul>
-            <li>
-              <a href="#">меню</a>
-            </li>
-            <li>
-              <a href="#">доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">отзывы</a>
-            </li>
-            <li>
-              <a href="#">конакты</a>
-            </li>
+            <li><a href="#menu-page">меню</a></li>
+            <li><a href="#delivery-page">доставка и оплата</a></li>
+            <li><a href="#home-page">отзывы</a></li>
+            <li><a href="#contacts-page">контакты</a></li>
           </ul>
         </div>
       </div>
@@ -380,8 +290,9 @@
       <p class="logo-foot">AQUARIM</p>
       <div class="footer-section3">
         <div class="left-foot">политика обработки персональных данных</div>
-        <div class="right-foot">desing by @sshultse</div>
+        <div class="right-foot">design by @sshultse</div>
       </div>
     </footer>
+    <button id="upBtn">▲</button>
   </body>
 </html>
